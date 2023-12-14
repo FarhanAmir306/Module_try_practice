@@ -1,0 +1,25 @@
+{% extends "base.html" %} 
+{% block content %}
+
+{% comment %} <div class="col-12">
+    <div class="card m-2">
+        <div class="card-body">
+            <img src="{{post.image.url}}" class="card-img-top" alt="..." style="width:50%;">
+            <h1 class="card-title">{{post.title}}</h1>
+            <p class="card-text">{{posts.content}}</p>
+            <p>Author : {{post.author.first_name}} {{post.author.last_name}}</p>
+            <p>
+                Category : {% for cat in post.category.all %}
+                <button class="btn btn-warning btn-sm m-2" disabled>
+                    {{cat.name}}
+                </button>
+                {% endfor %}
+            </p>
+        </div>
+    </div>
+</div> {% endcomment %}
+
+{{post.title}}
+
+{% endblock content %}
+
